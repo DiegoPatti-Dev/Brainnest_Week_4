@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: rgb(20, 33, 61);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.logo {
+  height: 125px;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.links {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+}
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(9, 13, 24);
+  height: 300px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.javascript-logo {
+  height: 200px;
+}
+
+.assignments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  min-height: 50vh;
+}
+
+.assignment-image {
+  width: 800px;
+  height: 400px;
+}
+
+.assignments-info {
+  width: 200px;
+}
+
+h3 {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  margin-top: 24px;
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover{
+  background-color: rgb(255, 255, 255);
+  transition: 0.7s;
+
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  padding: 12px 42px;
+  display: block;
+}
+
+.assignments-link:hover {
+  color: rgb(20, 33, 61);
+  transition: 0.7s;
+}
+
+footer {
+  background-color: rgb(9, 13, 24);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  padding: 32px 0;
+}

@@ -1,2 +1,2 @@
-# Brainnest_Week_4
- Brainnest Training Program - Week 4 - JavaScript
+# Brainnest Week 3
+ Brainnest Training Program - Week 4 - HTML, CSS and JavaScript.
