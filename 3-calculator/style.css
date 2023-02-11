@@ -55,7 +55,7 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-template-areas: 
     ". . . ."
-    "seven eight nine equal"
+    "seven eight nine bksp"
     "four five six equal"
     "one two three equal"
     "zero decimal clear equal";
@@ -66,6 +66,7 @@ button {
   border: 0;
   font-size: .75rem;
   border-color: lightgray;
+  cursor: pointer;
 }
 
 .one {
@@ -103,12 +104,31 @@ button {
 }
 .equal {
   grid-area: equal;
-  background-color: rgb(255, 68, 0);
+  background-color: rgb(255, 100, 43);
+}
 
+.bksp {
+  grid-area: bksp;
+  background-color: lightgrey
 }
 
 .operator {
   background-color: lightgrey;
+}
+
+.operator:active,
+.bksp:active {
+  background-color: grey;
+}
+
+.number:active, 
+.clear:active,
+.decimal:active {
+  background-color: lightgrey;
+}
+
+.equal:active {
+  background-color: rgb(255, 68, 0);
 }
 
 @media (max-width: 640px) {
@@ -128,7 +148,7 @@ button {
 
 @media (max-width: 395px) {
   #calculator_display {
-    width: 8rem;
+    width: auto;
   }
 
   .display_previous {
