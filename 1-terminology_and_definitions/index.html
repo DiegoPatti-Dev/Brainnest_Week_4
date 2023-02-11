@@ -141,6 +141,117 @@
           </li>
         </ul>
       </li>
+      <li class="question">
+        How do you add an element to the DOM?
+        <ul>
+          <li class="answer">
+            innerHTML property - You can add elements to the DOM by modifying the innerHTML property of a node to include the desired element. <br>
+            createElement and appendChild methods - The createElement method is used to create a new element, while the appendChild method is used to append that element as a child of a specified node. <br>
+            insertAdjacentHTML method - This method allows you to insert HTML into a node at a specified position, such as beforebegin, afterbegin, beforeend, or afterend. <br>
+            createTextNode and appendChild methods - This method allows you to create a text node and add it to the DOM using the appendChild method.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you remove an element from the DOM?
+        <ul>
+          <li class="answer">
+            You can remove an element from the DOM using the removeChild() method or by using the remove() method directly on the element you want to remove. 
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How can you alter an element in the DOM?
+        <ul>
+          <li class="answer">
+            To alter an element in the DOM, you can modify its properties, such as its innerHTML, style, or attributes.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        When adding text to a DOM element, should you use textContent or innerHTML?
+        <ul>
+          <li class="answer">
+            if you want to add plain text to an element, use textContent. If you want to add HTML content, use innerHTML.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Where should you include your JavaScript tag in your HTML file when working with DOM nodes?
+        <ul>
+          <li class="answer">
+            it is recommended to include the JavaScript tag at the end of the HTML file, just before the closing </ body> tag. This way, the entire HTML document has finished loading, allowing all the DOM nodes to be fully accessible, before executing any JavaScript code that manipulates the DOM. This helps ensure that the JavaScript code runs smoothly and prevents any errors from occurring due to non-existent DOM nodes.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do “events” and “listeners” work?
+        <ul>
+          <li class="answer">
+            "Events" are actions or occurrences that happen in the browser, such as a user clicking a button or a page finishing loading. "Listeners" are functions that wait for a specific event to occur and then respond to it by executing some code.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What are the benefits of using named functions in your listeners?
+        <ul>
+          <li class="answer">
+            Using named functions as listeners in JavaScript provides better organization and maintainability of code, making it easier to understand and modify.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you attach listeners to groups of nodes?
+        <ul>
+          <li class="answer">
+            You can use a loop to iterate over each node in the group and attach the event listener to each node. You can access the group of nodes using methods such as getElementsByClassName, getElementsByTagName, or querySelectorAll. 
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the difference between the return values of querySelector and querySelectorAll?
+        <ul>
+          <li class="answer">
+            QuerySelector returns the first element that matches a given CSS selector as a single Element object, while querySelectorAll returns a NodeList of all elements that match the selector. 
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What does a “nodelist” contain?
+        <ul>
+          <li class="answer">
+            A node list in JavaScript is a collection of nodes, typically elements, returned by a method such as querySelectorAll. It's an object that resembles an array, but is not an actual array and lacks some of the methods and properties that an array has. A node list can be converted to an array if needed, so that it can be worked with more efficiently.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        Explain the difference between “capture” and “bubbling”.
+        <ul>
+          <li class="answer">
+            Capture refers to the phase in the event flow where events are first captured by the outermost elements and then propagated towards the innermost elements. In other words, the event is first captured by the parent element and then travels to its children. <br>
+            Bubbling, on the other hand, refers to the phase in the event flow where events are first handled by the innermost elements and then propagated back up to the outermost elements. In other words, the event is first handled by the child element and then bubbles up to its parent.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        What is the difference between objects and arrays?
+        <ul>
+          <li class="answer">
+            Arrays are ordered lists of values and are accessed by index. They are ideal for storing collections of similar values such as a list of numbers or strings. <br>
+            Objects are unordered collections of key-value pairs and are accessed by keys instead of indices. They are ideal for storing more complex data structures, such as collections of related information like a person's name, age, and address.
+          </li>
+        </ul>
+      </li>
+      <li class="question">
+        How do you access object properties?
+        <ul>
+          <li class="answer">
+            you can access object properties using either the dot notation (obj.property) or bracket notation (obj["property"]). <br>
+            The dot notation is simpler and easier to read, but it only works if the property name is a valid identifier (starts with a letter, followed by letters, digits, or underscores). <br>
+            The bracket notation allows you to use any string as a property name, including names that are not valid identifiers, by enclosing the property name in quotes.
+          </li>
+        </ul>
+      </li>
     </ol>
   </main>
 
